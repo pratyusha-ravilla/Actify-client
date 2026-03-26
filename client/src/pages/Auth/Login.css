@@ -1,0 +1,119 @@
+/* ================= LOGIN PAGE ================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef1f9, #e3e7f2);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 26px;
+  color: #4B0082;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 26px;
+}
+
+/* ================= FLOATING INPUT ================= */
+
+.form-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  background: transparent;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #777;
+  font-size: 14px;
+  background: #fff;
+  padding: 0 6px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+/* FLOAT WHEN TYPING OR FOCUS */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #4B0082;
+  font-weight: 600;
+}
+
+/* ACTIVE BORDER */
+.form-group input:focus {
+  border-color: #4B0082;
+}
+
+/* ================= BUTTON ================= */
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #4B0082;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.login-button:hover {
+  background: #3a0066;
+  transform: translateY(-1px);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ================= FOOTER ================= */
+
+.login-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: #4B0082;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

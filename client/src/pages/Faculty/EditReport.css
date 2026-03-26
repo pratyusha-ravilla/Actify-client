@@ -1,0 +1,233 @@
+
+
+
+
+/* ================= PAGE WRAPPER ================= */
+.edit-wrapper {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* ================= MAIN CARD ================= */
+.edit-paper {
+  padding: 28px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= TITLE ================= */
+.edit-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #3f1d75;
+}
+
+/* ================= SECTIONS ================= */
+.edit-section {
+  margin-top: 28px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #faf8ff;
+  border: 1px solid #e6ddf5;
+}
+
+.edit-section h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #4b0082;
+  font-weight: 600;
+  border-left: 4px solid #4b0082;
+  padding-left: 10px;
+}
+
+/* ================= INPUT FILE ================= */
+.edit-section input[type="file"] {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ================= IMAGE GRID ================= */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+/* ================= IMAGE ITEM ================= */
+.image-item {
+  position: relative;
+  width: 150px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ================= DELETE BUTTON ================= */
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  z-index: 5;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+  transform: scale(1.1);
+}
+
+
+/* ================= ACTION BUTTONS ================= */
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .edit-paper {
+    padding: 20px;
+  }
+
+.image-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+
+  .edit-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+/* Clickable image */
+.clickable-image {
+  cursor: zoom-in;
+}
+
+/* Fullscreen preview */
+.image-preview-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview-full {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.close-preview {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.image-preview-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.image-preview-full {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.close-preview {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+.image-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  position: relative;
+  width: 160px;
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}

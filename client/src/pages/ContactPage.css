@@ -1,0 +1,92 @@
+/* ===== FULL PAGE BACKGROUND ===== */
+.contact-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+/* ===== CARD ===== */
+.contact-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+/* 
+  background: linear-gradient(135deg, #f073e3, #5475eb); */
+}
+
+/* ===== TITLE ===== */
+.contact-title {
+  font-weight: 800 !important;
+  font-size: 26px !important;
+  text-align: center;
+  color: #57078c;
+}
+
+/* ===== INPUT ===== */
+.contact-input .MuiOutlinedInput-root {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contact-input input,
+.contact-input textarea {
+  color: #262323;
+}
+
+/* label color */
+.contact-input label {
+  color: #2f2d2d !important;
+}
+
+/* border */
+.contact-input fieldset {
+  border-color: rgba(19, 18, 18, 0.3);
+}
+
+/* focus */
+.contact-input .Mui-focused fieldset {
+  border-color: #fff;
+}
+
+/* ===== BUTTON ===== */
+.contact-button {
+  padding: 12px !important;
+  border-radius: 15px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+
+  background: linear-gradient(135deg, #a22ecb, #8217cf) !important;
+
+  box-shadow: 0 10px 25px rgba(192, 124, 200, 0.4);
+
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #8456d9, #9139d0) !important;
+}
+
+.contact-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

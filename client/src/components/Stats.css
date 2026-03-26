@@ -1,0 +1,28 @@
+.stats-section {
+  width: 100%;
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  background: linear-gradient(135deg, #4b0082, #6a0dad);
+  text-align: center;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 36px;
+  color: #4b0082;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}

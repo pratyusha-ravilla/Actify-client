@@ -1,0 +1,201 @@
+/* ================= PAGE BACKGROUND ================= */
+
+.register-events-page {
+  min-height: 100vh;
+  padding: 40px 24px 60px;
+  background: linear-gradient(
+    180deg,
+    #f8fafc,
+    #eef2f7,
+    #e5edf6
+  );
+}
+
+/* ================= HEADER ================= */
+
+.register-header {
+  max-width: 1000px;
+  margin: 0 auto 32px;
+  padding: 30px 24px;
+  border-radius: 18px;
+  text-align: center;
+
+  background: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.register-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.register-subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ================= STATS BAR ================= */
+
+.stats-bar {
+  max-width: 1000px;
+  margin: 0 auto 26px;
+}
+
+.stat-tile {
+  padding: 18px;
+  border-radius: 16px;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  transition: transform 0.25s ease;
+}
+
+.stat-tile:hover {
+  transform: translateY(-4px);
+}
+
+.stat-tile.accent {
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+}
+
+.stat-tile.soft {
+  background: linear-gradient(135deg, #ecfeff, #f0fdfa);
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.stat-label {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #475569;
+}
+
+/* ================= INFO PANEL ================= */
+
+.info-panel {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 16px 20px;
+  border-radius: 14px;
+
+  background: #f8fafc;
+  border-left: 4px solid #38bdf8;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.info-text {
+  font-size: 14px;
+  color: #334155;
+}
+
+/* ================= EVENT GRID ================= */
+
+.event-card {
+  height: 100%;
+  padding: 22px;
+  border-radius: 18px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= TOP RIBBON ================= */
+
+.event-accent {
+  height: 6px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #67e8f9
+  );
+}
+
+/* ================= EVENT CONTENT ================= */
+
+.event-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.event-description {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+
+/* ================= TAGS ================= */
+
+.MuiChip-root {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+/* ================= REGISTER BUTTON ================= */
+
+.register-btn {
+  margin-top: 18px !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+
+  background: linear-gradient(
+    90deg,
+    #0ea5e9,
+    #38bdf8
+  ) !important;
+
+  color: white !important;
+  box-shadow: 0 8px 18px rgba(14, 165, 233, 0.35);
+
+  transition: all 0.25s ease !important;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(14, 165, 233, 0.5);
+}
+
+.register-btn.Mui-disabled {
+  background: #e5e7eb !important;
+  color: #64748b !important;
+  box-shadow: none !important;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #64748b;
+}

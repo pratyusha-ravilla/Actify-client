@@ -1,0 +1,155 @@
+/* ================= PAGE WRAPPER ================= */
+.view-wrapper {
+  max-width: 1150px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+.view-paper {
+  padding: 32px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* ================= HEADER ================= */
+.view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.view-title {
+  font-weight: 900;
+  font-size: 26px;
+  color: #111827;
+}
+
+.view-subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.status-approved {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.status-rejected {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.view-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.view-actions button {
+  font-weight: 600;
+}
+
+/* ================= SECTIONS ================= */
+.view-section {
+  margin-top: 32px;
+  padding: 22px;
+  background: #f9fafb;
+  border-radius: 14px;
+  border-left: 6px solid #2563eb;
+}
+
+.view-section h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+/* ================= TEXT ================= */
+.view-text {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #374151;
+}
+
+.view-text b {
+  color: #111827;
+}
+
+/* ================= IMAGES ================= */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ================= RESOURCE PHOTO ================= */
+.resource-photo {
+  margin-top: 12px;
+  width: 140px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* ================= EMPTY TEXT ================= */
+.empty-text {
+  font-size: 14px;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* ================= PRINT-LIKE LOOK ================= */
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .view-actions {
+    display: none;
+  }
+
+  .view-paper {
+    box-shadow: none;
+    padding: 0;
+  }
+}

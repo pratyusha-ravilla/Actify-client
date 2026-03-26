@@ -1,0 +1,142 @@
+/* ================= CREATE EVENT PAGE ================= */
+
+.create-event-wrapper {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #ede9fe 0%, transparent 60%),
+    radial-gradient(circle at bottom right, #c7d2fe 0%, transparent 60%),
+    linear-gradient(135deg, #f5f3ff 0%, #eef2ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 16px;
+}
+
+/* ================= CARD ================= */
+
+.create-event-card {
+  width: 100%;
+  max-width: 680px;
+  padding: 32px 36px;
+  border-radius: 18px !important;
+  background: white;
+  box-shadow:
+    0 25px 50px rgba(76, 29, 149, 0.15),
+    0 10px 20px rgba(124, 58, 237, 0.08) !important;
+  animation: slideFade 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative accent bar */
+.create-event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(76,29,149,1),
+    rgba(124,58,237,1),
+    rgba(192,132,252,1)
+  );
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= HEADERS ================= */
+
+.create-event-title {
+  font-weight: 900;
+  color: #4c1d95;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.create-event-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+/* ================= FORM ================= */
+
+.create-event-form {
+  margin-top: 20px;
+}
+
+.create-event-form .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+/* TextField focus effect */
+.create-event-form .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #7c3aed !important;
+  border-width: 2px;
+}
+
+/* Labels */
+.create-event-form .MuiInputLabel-root.Mui-focused {
+  color: #6d28d9 !important;
+}
+
+/* ================= DATE GRID ================= */
+
+.create-event-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+/* ================= SUBMIT BUTTON ================= */
+
+.create-event-submit {
+  margin-top: 30px !important;
+  padding: 14px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  background: linear-gradient(
+    90deg,
+    rgba(76,29,149,1) 0%,
+    rgba(124,58,237,1) 100%
+  ) !important;
+  transition: all 0.3s ease !important;
+}
+
+.create-event-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(124, 58, 237, 0.45);
+}
+
+/* Disabled state */
+.create-event-submit.Mui-disabled {
+  background: #c7c7d1 !important;
+  color: #fff !important;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+  .create-event-dates {
+    grid-template-columns: 1fr;
+  }
+
+  .create-event-card {
+    padding: 26px 22px;
+  }
+}
