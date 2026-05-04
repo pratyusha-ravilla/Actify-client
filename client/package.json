@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "vite",
@@ -42,6 +42,6 @@
     "vite": "^7.2.2"
   },
   "resolutions": {
-  "esbuild": "0.17.19"
+  "esbuild": "0.19.12"
 }
 }
