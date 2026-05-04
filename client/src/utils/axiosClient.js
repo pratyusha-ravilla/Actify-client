@@ -4,9 +4,11 @@
 
 import axios from "axios";
 
-const axiosClient = axios.create({
-  baseURL: "http://localhost:5002/api",
+// const axiosClient = axios.create({
+//   baseURL: "http://localhost:5002/api",
   
+const axiosClient = axios.create({
+  baseURL: "https://actify-server-v9zb.onrender.com/api",
   withCredentials: true,
 });
 
